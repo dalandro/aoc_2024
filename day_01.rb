@@ -5,7 +5,7 @@ class Solution
         @raw_data = raw_data || InputHelper.new(__FILE__).input_data!
 
         @input_data = @raw_data.split("\n")
-                         .reduce({a: [], b: [] }) do |acc, line|
+                               .reduce({a: [], b: [] }) do |acc, line|
             /(\d+)\s+(\d+)/.match(line) do |m|
                 acc[:a] << m[1].to_i
                 acc[:b] << m[2].to_i
