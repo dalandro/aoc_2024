@@ -45,7 +45,7 @@ class Solution
         if res != expectation
             raise "expected #{expectation}, got #{res}"
         else
-            puts "Part 1 Test successful"
+            "Part 1 Test successful"
         end
     end
 
@@ -55,13 +55,13 @@ class Solution
         if res != expectation
             raise "expected #{expectation}, got #{res}"
         else
-            puts "Part 2 Test successful"
+            "Part 2 Test successful"
         end
     end
 end
 
 puts Solution.test_part_1
 puts "My part 1 solution result: #{Solution.new.part_1}"
-
+puts ""
 puts Solution.test_part_2
 puts "My part 2 solution result: #{Solution.new.part_2}"
